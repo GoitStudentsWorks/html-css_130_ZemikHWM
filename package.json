@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project1-team1/",
+    "build": "vite build --base=/SmartFlex/",
     "preview": "vite preview"
   },
   "devDependencies": {
