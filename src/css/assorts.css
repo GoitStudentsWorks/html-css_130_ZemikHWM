@@ -40,6 +40,11 @@
 .assorts-product-name-wrap {
   max-width: 275px;
 }
+.assorts-product-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 .assorts-product-name {
   font-weight: 600;
