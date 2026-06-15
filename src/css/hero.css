@@ -2,7 +2,7 @@
   background-color: rgb(0, 0, 0);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/hero/hero-mob-bg.jpg);
+    url(../img/hero/hero-mob-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:
@@ -73,7 +73,7 @@
   .section-hero .container {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-mob2x-bg.jpg);
+      url(../img/hero/hero-mob2x-bg.webp);
   }
 }
 
@@ -82,7 +82,7 @@
     max-width: 768px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-tablet-bg.jpg);
+      url(../img/hero/hero-tablet-bg.webp);
     padding-top: 234px;
     padding-bottom: 234px;
     display: flex;
@@ -104,7 +104,7 @@
     max-width: 768px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-tablet2x-bg.jpg);
+      url(../img/hero/hero-tablet2x-bg.webp);
   }
 }
 
@@ -113,7 +113,7 @@
     max-width: 1440px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-desktop-bg.jpg);
+      url(../img/hero/hero-desktop-bg.webp);
     padding-top: 326px;
     padding-bottom: 326px;
   }
@@ -127,6 +127,6 @@
   .section-hero .container {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(../img/hero/hero-desktop2x-bg.jpg);
+      url(../img/hero/hero-desktop2x-bg.webp);
   }
 }
