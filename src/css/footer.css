@@ -1,12 +1,9 @@
-.footer {
-  background-color: #0A2300;
-  padding: 80px 16px;
-}
-
 .footer .container {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  background-color: #0A2300;
+  padding: 80px 16px;
 }
 
 .footer-logo {
@@ -16,6 +13,7 @@
 .footer-logo-icon {
 width: 162px;
 height: 70px;
+fill: #ffffff;
 }
 
 .footer-nav-list {
@@ -86,7 +84,7 @@ height: 70px;
 
 @media screen and (min-width: 768px) {
 
-  .footer {
+  .footer .container {
     padding: 80px 32px;
   }
 
@@ -114,12 +112,11 @@ height: 70px;
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding: 80px 64px;
-  }
-
   .footer-container {
-    gap: 80px;
+    padding: 80px 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-top {
