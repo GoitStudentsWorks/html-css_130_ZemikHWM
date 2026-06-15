@@ -25,18 +25,10 @@
 }
 
 .assorts-product-card {
-  width: 100%;
-}
-
-.assorts-product-img {
-  margin-bottom: 16px;
-}
-
-.assorts-product-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 125px;
+  gap: 16px;
+  width: 100%;
 }
 
 .assorts-product-card-info {
