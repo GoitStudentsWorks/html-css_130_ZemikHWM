@@ -1,0 +1,78 @@
+.container-mission {
+  width: 100%;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #5e8a4d;
+}
+
+.mission-title {
+  color: #ffffff;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.mission-text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mission-image img {
+  display: block;
+  width: 100%;
+  max-width: 343px;
+
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .mission-content {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .mission-title,
+  .mission-text {
+    width: calc((100% - 32px) / 2);
+  }
+  .mission-image img {
+    max-width: 704px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-mission {
+    gap: 80px;
+    margin: 0 auto;
+  }
+
+  .mission-title {
+    font-size: 48px;
+  }
+
+  .mission-content {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .mission-title,
+  .mission-text {
+    width: calc((100% - 32px) / 2);
+  }
+  .mission-image img {
+    max-width: 1312px;
+    height: auto;
+  }
+}

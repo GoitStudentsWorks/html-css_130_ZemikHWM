@@ -1,5 +1,95 @@
 <section id="contacts" class="section section-contacts">
   <div class="container">
-    <p>Contacts</p>
+    <div class="contacts-content">
+      <h3 class="contacts-subtitle">Contacts</h3>
+      <h2 class="contacts-title">Get in Touch</h2>
+      <p class="contacts-descr">We'd love to hear from you anytime!</p>
+      <address>
+        <ul class="contacts-address-list">
+          <li class="contacts-address-item">
+            <svg width="24" height="24">
+              <use href="/img/icons.svg#icon-envelope"></use>
+            </svg>
+            <a class="contacts-link" href="mailto:hello@organicstore.com"
+              >hello@organicstore.com</a
+            >
+          </li>
+          <li class="contacts-address-item">
+            <svg width="24" height="24">
+              <use href="/img/icons.svg#icon-phone"></use>
+            </svg>
+            <a class="contacts-link" href="tel:+15553291024"
+              >+1 (555) 329-1024</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="contacts-form">
+        <div>
+          <label for="input-name" class="contacts-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            id="input-name"
+            class="contacts-input"
+            required
+          />
+        </div>
+        <div>
+          <label for="input-email" class="contacts-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="hello@organic.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            id="input-email"
+            class="contacts-input"
+            required
+          />
+        </div>
+        <div class="textarea-wrap">
+          <label for="textarea" class="contacts-label">Message</label>
+          <textarea
+            name="message"
+            placeholder="Type your message..."
+            maxlength="500"
+            id="textarea"
+            class="contacts-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="contacts-submit-btn">Submit</button>
+      </form>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /img/contacts/contacts-desktop-organic-team.jpg   1x,
+          /img/contacts/contacts-desktop-organic-team2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/contacts/contacts-tablet-organic-team.jpg   1x,
+          /img/contacts/contacts-tablet-organic-team2x.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 768px)"
+        srcset="
+          /img/contacts/contacts-mob-organic-team.jpg   1x,
+          /img/contacts/contacts-mob-organic-team2x.jpg 2x
+        "
+      />
+      <img
+        src="/img/contacts/contacts-mob-organic-team.jpg"
+        alt="People smile and hold vegetables"
+        width="343"
+        height="343"
+      />
+    </picture>
   </div>
 </section>
