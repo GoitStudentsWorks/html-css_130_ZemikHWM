@@ -126,15 +126,16 @@
     width: calc((100% - 72px) / 4);
   }
 
-  .assorts-product-card:nth-child(-n + 4) .assorts-product-card-content {
-    height: 146px;
-  }
-
-  .assorts-product-card:nth-child(n + 5) .assorts-product-card-content {
-    height: 125px;
+  .assorts-product-img {
+    height: 364px;
+    object-fit: cover;
   }
 
   .assorts-product-name-wrap {
     max-width: 241px;
+  }
+
+  .assorts-product-card-btn {
+    margin-top: auto;
   }
 }
