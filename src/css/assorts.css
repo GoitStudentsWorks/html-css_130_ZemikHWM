@@ -25,7 +25,7 @@
 }
 
 .assorts-product-card {
-  width: 343px;
+  width: 100%;
 }
 
 .assorts-product-img {
@@ -94,9 +94,10 @@
   font-size: 16px;
   line-height: 1.5;
   color: inherit;
+  outline: none;
 
   transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-co lor 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
