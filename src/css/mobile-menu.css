@@ -1,0 +1,87 @@
+.mobmenu-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobmenu-overlay.is-open {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+}
+.mobmenu {
+  top: px;
+  left: 0;
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #5e8a4d;
+  position: relative;
+
+  padding: 6px 32px;
+}
+.mobmenu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobmenu-button-close {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  fill: #ffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-icon-close {
+}
+.mobmenu-button-close :hover,
+.mobmenu-button-close :focus {
+  fill: #010400;
+}
+
+.mobmenu-nav {
+  display: block;
+  margin-top: 64px;
+}
+.mobmenu-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.mobmenu-btn-order {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffff;
+  background-color: #1a5901;
+  border-radius: 4px;
+  line-height: 1.5;
+  margin-top: 32px;
+  text-align: center;
+  padding: 8px 0;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobmenu-btn-order:hover,
+.mobmenu-btn-order:focus {
+  background-color: #ffff;
+  color: #010400;
+  border: none;
+}
+.mobmenu-btn-order:active {
+  box-shadow: inset 2px 7px 27px -4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .mobmenu-overlay {
+    display: none;
+  }
+}
