@@ -89,11 +89,6 @@
   .header-btn-order:active {
     box-shadow: inset 2px 7px 27px -4px rgba(0, 0, 0, 0.15);
   }
-
-  .header-menu-icon {
-    width: 44px;
-    height: 44px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
