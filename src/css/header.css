@@ -25,7 +25,14 @@
 }
 .header-menu-icon {
   fill: #fff;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-menu-icon:hover,
+.header-menu-icon:focus {
+  fill: #010400;
+}
+
 @media screen and (min-width: 768px) {
   .section-header .container {
     padding: 6px 32px;
