@@ -1,1 +1,246 @@
+/* HEADER */
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #6f8f5f;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(11, 34, 3, 0.16);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 240px;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  color: #fff;
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover,
+.logo:focus {
+  color: #b8e986;
+  transform: translateY(-1px);
+}
+
+.logo span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-icon {
+  flex-shrink: 0;
+  margin-left: 8px;
+  color: currentColor;
+}
+
+.site-nav {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  display: block;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.current {
+  color: #b8e986;
+}
+
+.order-button {
+  display: none;
+  min-width: 100px;
+  margin-left: 32px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  background-color: #2e6b16;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-button:hover,
+.order-button:focus {
+  background-color: #184d09;
+  transform: translateY(-1px);
+}
+
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(184, 233, 134, 0.45);
+  border-radius: 10px;
+  background-color: rgba(46, 107, 22, 0.45);
+  color: #fff;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  background-color: #2e6b16;
+  border-color: #b8e986;
+  color: #b8e986;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background-color: rgba(11, 34, 3, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(100%, 400px);
+  height: 100%;
+  padding: 28px 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow-y: auto;
+  background-color: #6f8f5f;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open .mobile-menu-inner {
+  transform: translateX(0);
+}
+
+.mobile-menu-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.mobile-logo {
+  align-self: flex-start;
+  margin-bottom: 36px;
+}
+
+.mobile-nav {
+  width: 100%;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 22px;
+}
+
+.mobile-nav-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  color: #b8e986;
+}
+
+.mobile-order-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  margin: 28px 0 0 auto;
+  padding: 12px 28px;
+  border-radius: 12px;
+  background-color: #2e6b16;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu-button,
+  .mobile-menu {
+    display: none;
+  }
+
+  .order-button {
+    display: inline-block;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    min-height: 92px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .site-nav {
+    margin-left: 140px;
+  }
+}
