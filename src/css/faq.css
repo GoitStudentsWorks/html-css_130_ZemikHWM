@@ -1,5 +1,8 @@
-.section-faq .container {
+.section-faq {
   background-color: #5e8a4d;
+}
+
+.section-faq .container {
   color: #ffff;
 }
 

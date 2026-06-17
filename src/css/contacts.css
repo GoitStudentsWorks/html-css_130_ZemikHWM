@@ -1,5 +1,7 @@
-.section-contacts .container {
+.section-contacts {
   background-color: #e8eee5;
+}
+.section-contacts .container {
   display: flex;
   flex-direction: column;
   gap: 32px 0;

@@ -1,5 +1,7 @@
-.section-header .container {
+.header {
   background-color: #5e8a4d;
+}
+.header .container {
   padding: 6px 16px;
   display: flex;
   justify-content: space-between;
@@ -58,7 +60,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-header .container {
+  .header .container {
     padding: 6px 32px;
   }
 
@@ -92,7 +94,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .section-header .container {
+  .header .container {
     padding: 6px 64px;
   }
   .header-menu-icon {

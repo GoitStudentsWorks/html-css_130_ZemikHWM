@@ -1,5 +1,8 @@
+.section-hero {
+  background-color: #5e8a4d;
+}
+
 .section-hero .container {
-  background-color: rgb(0, 0, 0);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/hero/hero-mob-bg.jpg);

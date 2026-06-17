@@ -1,3 +1,6 @@
+.section-mission {
+  background-color: #5e8a4d;
+}
 .container-mission {
   width: 100%;
 
@@ -5,7 +8,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  background-color: #5e8a4d;
 }
 
 .mission-title {

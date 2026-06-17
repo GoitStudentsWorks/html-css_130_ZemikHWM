@@ -1,9 +1,12 @@
+.footer {
+  background-color: #0a2300;
+}
 .footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  background-color: #0a2300;
+
   padding: 80px 16px;
 }
 .footer-top {

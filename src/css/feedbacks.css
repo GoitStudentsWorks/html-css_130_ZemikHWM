@@ -1,5 +1,8 @@
-.fb-wrapper {
+.section-feedbacks {
   background: #e8eee5;
+}
+
+.fb-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
