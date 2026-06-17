@@ -1,1 +1,1 @@
-import '/scripts/mobile-menu.js';
+import '/scripts/burger-menu.js';
